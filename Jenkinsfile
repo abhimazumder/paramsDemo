@@ -19,7 +19,7 @@ pipeline{
             steps{
                 echo "Script output : "
                 sh 'chmod +x script.sh'
-                sh './script.sh params.firstname params.lastname params.option'
+                sh "./script.sh ${params.firstname} ${params.lastname} ${params.option}"
             }
         }
     }
