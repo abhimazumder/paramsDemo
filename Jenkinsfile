@@ -9,7 +9,7 @@ pipeline{
         stage('test'){
             steps{
                 sh 'ls'
-                pwd
+                sh 'pwd'
                 echo "firstname : ${params.firstname}"
                 echo "lastname : ${params.lastname}"
                 echo "option : ${params.option}"
