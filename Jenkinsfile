@@ -18,7 +18,7 @@ pipeline{
         stage('script'){
             steps{
                 echo "Script output : "
-                sh './script.sh ${params.firstname} ${params.lastname} ${params.option}'
+                sh './script.sh params.firstname params.lastname params.option'
             }
         }
     }
